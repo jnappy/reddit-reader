@@ -1,6 +1,4 @@
- ![](http://www.krossover.com/wp-content/themes/swatch/images/assets/krossover-logo.png)
-
-# This is a sample app
+# This is a practice problem for the PFNP weekend bootcamp
 
 ## Your dev environment / running the app locally
 
@@ -27,12 +25,8 @@ ruby app.rb
 
 ```
 
-Finally, visit `http://localhost:4567/`, and you'll see:
+Finally, visit `http://localhost:4567/`, and you'll have a local server!
 
-
-<p align="center">
-  <img src="https://i.imgur.com/9bbjz6O.png">
-</p>
 
 ## Some info about the files and folders
 
