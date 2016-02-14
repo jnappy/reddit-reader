@@ -1,0 +1,6 @@
+<% @posts.each do |post| %>
+
+	<p><%= post['data']['author'] %></p>
+	<p><img	src=<%= post['data']['thumbnail'] %>></p>
+
+<% end %>

@@ -1,0 +1,490 @@
+/* 5 Column Layout */
+.col-xs-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.col-xs-5ths {
+    width: 20%;
+    float: left;
+}
+
+/*iPhone 4 Only*/
+
+@media (max-width: 350px){
+	.table{
+		font-size: 12px;
+		margin-left: -10px;
+	}
+
+	.top-10-section{
+		margin-top: 15px !important;
+	}
+
+	#table-header-mobile{
+		display: none;
+	}
+}
+
+/*Mobile Only*/
+@media (max-width: 992px){
+	.reset-filters-desktop{
+		display: none;
+	}
+
+	.top-10-section {
+    font-family: KODIN-Regular, KODIN-Medium, sans-serif;
+    margin-top: 15px !important;
+    box-shadow: 0 0 15px #848484;
+    margin-bottom: 0px;
+	}
+}
+
+/*Desktop Only*/
+
+@media (min-width: 768px) {
+    .col-sm-5ths {
+        width: 20%;
+        float: left;
+    }
+    .circle-left{
+			float: right;
+			margin-right: 100px;
+		}
+
+	.circle-right{
+			float: left;
+			margin-left: 100px;
+		}
+
+	.breadcrumbs{
+		display: none;
+	}
+
+	.filter {
+		background-color: #000;
+	}
+}
+
+@media (max-width:992px){
+		.center-nav {
+			display: none;
+		}
+
+		.breadcrumbs {
+			margin-top: -20px;
+			height: 35px;
+			background-color: #c10801;
+		}
+
+		.breadcrumbs-text{
+			color: #fff;
+		}
+
+		.filters{
+			/*background-color: #c10801;*/
+			color: #ef4924;
+			max-height: 35px;
+			margin-top: -20px;
+			width: 100%;
+		}
+
+}
+
+@media (min-width: 992px) {
+    .col-md-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+		
+		.top-10-section {
+    font-family: KODIN-Regular, KODIN-Medium, sans-serif;
+    margin-top: -5px;
+    box-shadow: 0 0 15px #848484;
+    margin-bottom: 100px;
+	}
+}
+
+
+/* Background Section*/
+.background {
+	background-color: #e1e1e1;
+}
+
+@font-face {
+	font-family: "KODIN-Medium";
+	src: 	url("/vendor/bootstrap/fonts/KODIN-Medium.otf") format("truetype"),
+}
+
+@font-face{
+	font-family: "KODIN-Regular";
+	src: url("/vendor/bootstrap/fonts/KODIN-Regular.otf") format("truetype");
+}
+
+@font-face {
+	font-family: "KODIN-Bold";
+	src: 	url("/vendor/bootstrap/fonts/KODIN-Bold.otf") format("truetype");
+}
+
+
+/* Whole Page! */
+
+.main-container{
+	background-color: #fff;
+	width: 100%;
+	font-family: KODIN-Regular, sans-serif;
+}
+
+.display-none{
+	display: none;
+}
+
+
+/* Header Section */
+
+.reset-filters-desktop{
+	margin-bottom: -35px;
+}
+
+.header{
+	margin-top: 5%;
+	margin-bottom: 2%;
+}
+
+.leaderboard-logo{
+		width: 550px;
+    margin-top: 20px;
+ }
+
+.leaderboard-header {
+	font-size: 24px;
+}
+/* Navigational Section */
+hr {
+	border-top: 2px solid #e1e1e1;
+}
+
+a {
+	color: #e5e5e5;
+}
+
+a:active{
+	color: #ef4924;
+}
+
+.krossover-orange{
+	color:#ef4924;
+}
+
+a:hover{
+	color: #ef4924;
+	text-decoration: none;
+}
+
+.center-nav{
+	margin: auto;
+}
+
+.navigation-steps{
+	font-size: 16px;
+	color: #e5e5e5;
+	text-transform: uppercase;
+	font-family: KODIN-Medium, KODIN-Regular, sans-serif;
+}
+
+/* Main Content */
+.main-content{
+	background-image: url("/img/kk_leaderboard_background.png");
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	min-height: 500px;
+	margin-bottom: -20px;
+}
+
+/* Pick a Sport Section */
+
+#selection-wrapper{
+	margin: auto;
+	padding-top: 60px;
+	color: #fff;
+	font-family: KODIN-Regular, sans-serif;
+}
+
+
+#select-a-sport {
+
+}
+
+#select-a-division{
+	margin-left: auto;
+}
+
+#select-a-gender{
+/*	left: 150%;
+*/}
+
+#select-a-stat{
+	margin-bottom: 50px;
+/*	padding-left: 225px;
+	padding-right: 225px;*/
+}
+
+.form-title{
+	margin-bottom: 10px;
+	font-size: 36px;
+}
+
+.form-section{
+	min-height: 500px;
+}
+
+.circle {
+	width: 140px;
+	height: 140px;
+	background: none;
+/*	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50%;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #e1e1e1;*/
+	margin: auto;
+}
+
+.stat-circle {
+	width: 140px;
+	height: 140px;
+	background: none;
+	/*-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50%;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #e1e1e1;*/
+	margin: auto;
+}
+
+.square {
+	width: 150px;
+	height: 150px;
+	background: transparent;
+	border-radius: 30px;
+	border-color: #e1e1e1;
+	border-style: solid;
+	border-width: 1px;
+	margin: auto;
+}
+
+.glyphicon-arrow-right{
+	margin-right: 5px;
+}
+
+.sport-circle-caption{
+	margin-top: 20px;
+	text-transform: uppercase;
+	font-size: 20px;
+}
+
+
+
+/* Leaderboard Section */
+.breadcrumbs {
+	height: 35px;
+	background-color: #c10801;
+}
+
+.breadcrumbs-text{
+	color: #fff;
+	padding-top: 10px;
+}
+
+.filters{
+			/*background-color: #c10801;*/
+			color: #ef4924;
+			max-height: 35px;
+}
+
+
+
+#reset-filter{
+	margin-left: 10px;
+}
+
+.reset-filter-text{
+	color: #ef4924;
+	/*color: #F39624;*/
+}
+
+.reset-filter-text:hover{
+	text-decoration: none;
+	color: #F39624;
+}
+
+.table {
+    border-style: solid;
+    border-color: #e1e1e1;
+    border-collapse: inherit;
+}
+
+.top-5-section{
+	color: #fff;
+	padding-top: 50px;
+}
+
+.glyphicon-user {
+	font-size: 90px;
+	margin-top: 12px;
+}
+
+.top-5-rank {
+	font-size: 40px;
+	margin-bottom: -45px;
+}
+
+.top-5-name{
+	font-family: KODIN-Bold, KODIN-Regular, sans-serif;
+	font-size: 20px;
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+
+.top-5-caption{
+	font-size: 18px;
+	margin-top: 10px;
+}
+
+.top-5-header{
+	font-size: 36px;
+	margin-bottom: 36px;
+}
+
+.top-10-section{
+	font-family: KODIN-Regular, KODIN-Medium, sans-serif;
+  margin-top: -58px;
+  box-shadow: 0 0 15px #848484;
+  margin-bottom: 0px;
+}
+
+.table{
+	border-style: none;
+}
+
+.top-10-table-header{
+	background-color: #0b425b;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.top-10-table-header-row{
+	height:60px;
+}
+
+.top-10-table-header-name{
+}
+
+.table>thead>tr>th {
+    padding: 14px;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: #e5f3fe;
+}
+
+.table>tbody>tr>td{
+	border-top: none;
+	padding: 12px;
+}
+
+.leaderboard-button{
+	background-color: #de2c12;
+	color: #fff;
+	border-radius: 1px;
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+
+/* White Content / Sub Footer Of Sorts */
+.white-content {
+	min-height: 0px;
+	font-family: KODIN-Medium, KODIN-Regular, sans-serif;
+}
+
+/* Footer Section */
+
+.footer{
+	margin-top: -5px;
+	background-color: #fff;
+}
+
+.footer-hr {
+	width: 100%;
+	margin-left: 0px;
+	margin-top: 0px;
+}
+
+.footer-text{
+	color: #0b425b;
+	font-size: 16px;
+	font-family: KODIN-Medium, KODIN-Regular, sans-serif;
+	text-transform: uppercase;
+}
+
+.footer-text a{
+	color: #0b425b;
+	font-size: 16px;
+	font-family: KODIN-Medium, KODIN-Regular, sans-serif;
+	text-transform: uppercase;
+}
+
+/* Form */
+
+#leaderboard-filter {
+	display: none;
+}
+
+#select-a-sport {
+  -webkit-animation-duration: 2s;
+  -moz-animation-delay: 2s;
+  -animation-duration: 2s;
+  -vendor-animation-iteration-count: infinite;
+}
+
+#select-a-division {
+  -webkit-animation-duration: 2s;
+  -moz-animation-delay: 2s;
+  -animation-duration: 2s;
+  -vendor-animation-iteration-count: infinite;
+}
+
+#select-a-gender {
+  -webkit-animation-duration: 2s;
+  -moz-animation-delay: 2s;
+  -animation-duration: 2s;
+  -vendor-animation-iteration-count: infinite;
+}
+
+#select-a-stat {
+  -webkit-animation-duration: 2s;
+  -moz-animation-delay: 2s;
+  -animation-duration: 2s;
+  -vendor-animation-iteration-count: infinite;
+}
