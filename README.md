@@ -10,7 +10,7 @@ Taken from the Ruby Wiki:
 
 "Mac's with version 10.5 Leopard or higher already have Ruby and RubyGems installed, Ruby and RubyGems update instructions are [found here](http://homebrew.github.com/) at the Homebrew for OS X page, as well as instructions for adding Homebrew to your OS X machine if you do not already have it installed."
 
-To get the leaderboard running locally, simply run the following
+To get started, simply run the following
 
 ```bash
 
