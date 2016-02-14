@@ -27,12 +27,6 @@ ruby app.rb
 
 ```
 
-You should see something like:
-
-<p align="center">
-  <img src="https://i.imgur.com/aI6o0Wr.png">
-</p>
-
 Finally, visit `http://localhost:4567/`, and you'll see:
 
 
