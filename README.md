@@ -30,9 +30,7 @@ Finally, visit `http://localhost:4567/`, and you'll have a local server!
 
 ## Some info about the files and folders
 
-- **public/** - static assets
-  - **app.js** - JavaScript that powers the AJAX
 - **views/** - HTML and embedded Ruby logic
-- **app.rb** - configuration, endpoints
+- **app.rb** - configuration, endpoints, Ruby logic to make it work
 
 
