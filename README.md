@@ -58,13 +58,19 @@ There is commented code in each of the files referenced below.  Do not change th
 
 ## Deliverable
 
-<p align="center">
-	<img src="https://i.imgur.com/rEjJy3N.png">
-</p>
+The form should look like this: 
 
 <p align="center">
 	<img src="https://i.imgur.com/FMm94N2.png">
 </p>
+
+...and on submit:
+
+<p align="center">
+	<img src="https://i.imgur.com/rEjJy3N.png">
+</p>
+
+
 
 ## Resources
 
