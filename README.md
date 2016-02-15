@@ -10,7 +10,9 @@ Taken from the Ruby Wiki:
 
 "Mac's with version 10.5 Leopard or higher already have Ruby and RubyGems installed, Ruby and RubyGems update instructions are [found here](http://homebrew.github.com/) at the Homebrew for OS X page, as well as instructions for adding Homebrew to your OS X machine if you do not already have it installed."
 
-To get your server started
+
+To get your server started, simply run the following:
+
 
 ```bash
 
@@ -31,8 +33,8 @@ Finally, visit `http://localhost:4567/`, and you'll have a local server!  You sh
 #### Some info about the files and folders
 
 - **views/** - HTML and embedded Ruby logic
-- **app.rb** - configuration, endpoints
-- **other files** - if you want to expand on this and push it to [Heroku](https://devcenter.heroku.com/articles/rack), these files are already here for you!
+- **app.rb** - configuration, endpoints, Ruby logic to make it work
+
 
 ## Requirements of this exercise
 
