@@ -1,7 +1,23 @@
-<% @posts.each do |post| %>
 
-	<p><%= post['data']['author'] %></p>
-	<!-- 6. make it so the URL below is shown as a picture in the html  -->
-	<p><%= post['data']['thumbnail'] %></p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Results</title>
+    <link type='text' rel='stylesheet' href='style.css'>
+  </head>
+  <body>
+    <!-- Top of the page -->
+    <h1> This is the Reddit Post</h1>
+    <div class='btn'>
+      <a href='/'>Go Back</a>
+    </div>
+    <% @posts.each do |post| %>
+      <div class='post'>
+      	<p><%= post['data']['title'] %></p>
+      	<!-- 6. make it so the URL below is shown as a picture in the html  -->
+      	<img src= <%= post['data']['thumbnail'] %> >
+      </div>
 
-<% end %>
+    <% end %>
+  </body>
+</html>
