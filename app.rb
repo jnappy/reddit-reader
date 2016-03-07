@@ -23,3 +23,7 @@ post "/results" do
 	#5. load the results page
 	erb :results
 end
+
+get '/newpost' do
+  erb :newpost
+end
