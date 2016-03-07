@@ -11,10 +11,13 @@
     <div class='btn'>
       <a href='/'>Go Back</a>
     </div>
+
     <% @posts.each do |post| %>
+
       <div class='post'>
-      	<p><%= post['data']['title'] %></p>
+      	<h4><%= post['data']['title'] %></h4>
       	<!-- 6. make it so the URL below is shown as a picture in the html  -->
+        <p> <%= post['data']['author'] %></p>
       	<img src= <%= post['data']['thumbnail'] %> >
       </div>
 
