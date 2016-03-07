@@ -1,26 +1,339 @@
-
 <!DOCTYPE html>
+
+
 <html>
-  <head>
-    <title>Results</title>
-    <link type='text' rel='stylesheet' href='style.css'>
-  </head>
-  <body>
+	<head>
+		<title>
+			Knicks Reddit Header
+		</title>
+		<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+		<style>
+			* {
+				text-align: center;
+				margin: 0;
+				padding: 0;
+				font-family: Arial, sans-serif;
+			}
+			.jumbotron {
+				height: 250px;
+				width: 100%;
+				display: flex;
+				background-image:url('http://cdn.pcwallart.com/images/new-york-skyline-wallpaper-3.jpg');
+				background-size: fit;
+				background-position: center bottom;
+				background-attachment: fixed;
+			}
+
+			.parent {
+				margin: auto;
+			    display: flex;
+			    height: 95%;
+			    width: 95%;
+			    background: -webkit-radial-gradient(circle,rgba(255,255,255,.6),rgba(0,0,0,.5),rgba(0,0,0,.8));;
+			    background: radial-gradient(circle,rgba(255,255,255,.6), rgba(0,0,0,.5),rgba(0,0,0,.8));
+				border-radius: 25px;
+			}
+			.active {
+				visibility: hidden;
+			}
+
+			#logo {
+			    width: auto;
+			    height: 200px;
+			    margin: auto;
+			    visibility: visible;
+			    box-shadow: 0 0 4px 4px rgba(255,255,255,.4);
+			    border-radius: 100%;
+
+
+			}
+			.content {
+				display: flex;
+				height: 90%;
+				width: 40%;
+				margin: auto;
+				padding:10px;
+				border-radius: 25px;
+			}
+			.child h1 {
+				color: white;
+			}
+			.left .banner {
+				height: 60px;
+				width: 100px;
+				vertical-align: middle;
+				padding: 5px;
+				margin: 0;
+				background-size: cover;
+
+			}
+			.name {
+				font-weight: bold;
+				font-size: 13px;
+				color: rgb(0,122,193);
+
+
+			}
+			.number {
+				font-size: 30px;
+				font-weight: bold;
+				color: rgb(243,112,33);
+				text-shadow: -1px 2px black;
+			}
+			.content ul li{
+				display: inline;
+			}
+
+
+
+			#ewing:hover {
+				background-image: url('http://www.hoopscritic.com/wp-content/uploads/2015/09/Patrick-Ewing.jpg');
+			}
+			#reed:hover{
+				background-image: url('http://i.cdn.turner.com/nba/nba/history/seasonreviews/1972-73/review_608_reed_cowans.jpg');
+			}
+			#barnett:hover{
+				background-image: url('http://www.rantsports.com/nba/files/2014/09/Barnett-Getty.jpg');
+			}
+			#bradley:hover{
+				background-image:url('https://cdn.shopify.com/s/files/1/0740/9143/files/bill-bradley-5_large.jpg?9334497396134144991');
+			}
+			#mcguire:hover {
+				background-image: url('http://collections.mcny.org/Doc/MNY/Media/TR3/b/f/7/e/MNY327615.jpg');
+
+			}
+			#frazier:hover{
+				background-image:url('https://cdn1.vox-cdn.com/thumbor/6C2hdtcOvNSu_IfEHlAy3zec09M=/83x0:939x571/1310x873/cdn0.vox-cdn.com/uploads/chorus_image/image/10648771/clyde.0.png');
+
+			}
+			#debusschere .name{
+				font-size:10px ;
+			}
+			#debusschere:hover{
+				background-image: url('http://img.spokeo.com/public/900-600/dave_debusschere_1971_02_01.jpg');
+
+
+			}
+			#monroe:hover{
+				background-image: url('http://exnba.com/wp-content/uploads/2013/04/earl-monroe-book.jpg');
+
+			}
+			#holzman:hover{
+				background-image: url('http://www.rantsports.com/nba/files/2014/09/redholzman1cropped.jpg');
+			}
+			.content a:link, .content a:visited {
+				text-decoration: none;
+
+			}
+			.show {
+				visibility: visible;
+			}
+
+			.champ ul li {
+				display: inline;
+			}
+
+			.championship img {
+				height: 80px;
+				width: auto;
+				padding: 15px;
+				display: flex;
+				margin: auto;
+				background: transparent;
+				border-image-outset:
+			}
+			.sub{
+				height: 20px;
+				width: 100%;
+				border: 1px solid blue;
+				background-color: blue;
+			}
+			.nav ul li{
+				display: inline;
+				color: white;
+				margin: 30px;
+			}
+			.scorebox {
+				height: 150px;
+				width: 100%;
+				border: 1px solid red;
+				display: flex;
+			}
+
+
+		</style>
+		<script>
+			var main = function(){
+
+				$('#logo').click(function(){
+					$(this).parent('.child').parent('.parent').toggleClass('active');
+				});
+				$('.banner').hover(function(){
+					$(this).find('span').toggle();
+
+				});
+
+
+			};
+
+			$(document).ready(main);
+		</script>
+	</head>
+	<header>
+	</header>
+	<body>
+	<div class='jumbotron'>
+		<div class='active parent'>
+			<div class='content left'>
+				<ul class='top'>
+					<li><a href='#'>
+						<div class='banner' id="ewing">
+						<span>
+							<p class='name'>EWING</span>
+							<br/>
+							<p class='number'>33</span>
+						</span>
+
+						</div>
+						</a>
+					</li>
+					<li><a href='#'>
+						<div class='banner' id="bradley">
+							<span class='name'>BRADLEY</span>
+							<br/>
+							<span class='number'>24</span>
+						</div>
+						</a>
+					</li>
+					<li><a href='#'>
+						<div class='banner' id='debusschere'>
+							<span class='name'>DEBUSSCHERE</span>
+							<br/>
+							<span class='number'>22</span>
+						</div>
+						</a>
+					</li>
+				</ul>
+				<ul class='middle'>
+					<li><a href='#'>
+						<div class='banner' id='reed'>
+							<span class='name'>REED</span>
+							<br/>
+							<span class='number'>19</span>
+						</div>
+						</a>
+					</li>
+					<li><a href='#'>
+						<div class='banner' id='mcguire'>
+							<span class='name'>MCGUIRE</span>
+							<br/>
+							<span class='number'>15</span>
+						</div>
+						</a>
+					</li>
+
+					<li><a href='#'>
+						<div class='banner' id='monroe'>
+							<span class='name'>MONROE</span>
+							<br/>
+							<span class='number'>15</span>
+						</div>
+						</a>
+					</li>
+				</ul>
+				<ul class='bottom'>
+					<li><a href='#'>
+						<div class='banner' id='barnett'>
+							<span class='name'>BARNETT</span>
+							<br/>
+							<span class='number'>12</span>
+						</div>
+						</a>
+					</li>
+					<li><a href='#'>
+						<div class='banner' id='frazier'>
+							<span class='name'>FRAZIER</span>
+							<br/>
+							<span class='number'>10</span>
+						</div>
+						</a>
+					</li>
+					<li><a href='#'>
+						<div class='banner' id='holzman'>
+							<span class='name'>HOLZMAN</span>
+							<br/>
+							<span class='number'>613</span>
+						</div>
+						</a>
+					</li>
+				</ul>
+				<ul class='champs'>
+					<div class='championship'>
+					<li><a href='#'>
+
+							<img src='https://s-media-cache-ak0.pinimg.com/736x/50/58/c4/5058c4f3aab6aa3cad67c50ceaeb0bca.jpg'>
+						</a>
+					</li>
+					<li><a href='#'>
+							<img src='https://s-media-cache-ak0.pinimg.com/736x/50/58/c4/5058c4f3aab6aa3cad67c50ceaeb0bca.jpg'>
+						</a>
+					</li>
+					</div>
+				</ul>
+			</div>
+
+
+			<div class='child'>
+				<br/>
+				<img id='logo' src="http://content.sportslogos.net/logos/6/216/full/813.gif"/>
+				<br/>
+			</div>
+
+			<div class='content right'>
+			</div>
+		</div>
+	</div>
+	<div class='sub nav'>
+		<ul style='font-size: 13px;'>
+			<li>hot</li>
+			<li>new</li>
+			<li>rising</li>
+			<li>controversial</li>
+			<li>top</li>
+			<li>gilded</li>
+			<li>wiki</li>
+			<li>promoted</li>
+			<li>view images</li>
+		</ul>
+	</div>
+
+    <!-- <header style="display: flex; width: 100%; height: 80px; text-align: center; padding: 20px;">
+      <h1 style='margin: auto;'> This is the Reddit Post</h1>
+    </header> -->
+      <!-- <div class='btn' style="border: 1px solid black; width: 100px; margin: auto; text-align: center; font-size: 20px; height: 25px;">
+        <a href='/' style="text-decoration: none; color: gray;">Go Back</a>
+      </div> -->
+
     <!-- Top of the page -->
-    <h1> This is the Reddit Post</h1>
-    <div class='btn'>
-      <a href='/'>Go Back</a>
-    </div>
+        <% @posts.each do |post| %>
+        <div class='post' style="border: 1px solid rgb(200,200,200); display: flex; width: 70%; padding: 10px; height: 100px;">
 
-    <% @posts.each do |post| %>
+          <h3 style='margin: 10px; color: gray;'> SCORE</h3>
+          <br/>
+          <h4 style='margin: 10px; color: gray;'> <%= post['data']['ups'] %>
+          </h4>
 
-      <div class='post'>
-      	<h4><%= post['data']['title'] %></h4>
-      	<!-- 6. make it so the URL below is shown as a picture in the html  -->
-        <p> <%= post['data']['author'] %></p>
-      	<img src= <%= post['data']['thumbnail'] %> >
-      </div>
+          <img style= "float: left; width: 100px; height: auto; object-fit: cover;" src= <%= post['data']['thumbnail'] %>>
 
-    <% end %>
-  </body>
+          <div class='text' style="position: relative; width: 80%; margin: 10px; text-align: left;">
+
+          	<a style= 'text-decoration: none;'href= <%= post['data']['url'] %>> <h4><%= post['data']['title'] %></h4></a>
+          	<!-- 6. make it so the URL below is shown as a picture in the html  -->
+            <p style='line-height: 50px;'> <%= post['data']['author'] %> </p>
+
+          </div>
+        </div>
+
+        <% end %>
+	</body>
 </html>
