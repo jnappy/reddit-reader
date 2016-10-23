@@ -3,7 +3,7 @@ require 'pry'
 require 'httparty'
 
 get "/" do 
-   # 2. load the index page
+   # 2. load the index.erb page
 end 
 
 post "/results" do
@@ -14,6 +14,6 @@ post "/results" do
 
 	@posts = returned_results['data']['children']
 
-	#5. load the results page 
+	#5. load the results.erb page 
 end
 
